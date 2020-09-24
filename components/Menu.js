@@ -19,6 +19,7 @@ const Menu = () => {
       {icons.map((iconName) => {
         return (
           <Icon
+            key={iconName}
             name={iconName}
             containerStyle={styles.iconContainer}
             size={Dimensions.get('window').width / 5 - marginBase * 5}
